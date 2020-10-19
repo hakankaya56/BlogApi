@@ -1,0 +1,9 @@
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\bin\Debug\netcoreapp3.1\Blog.Article.Entities.deps.json
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\bin\Debug\netcoreapp3.1\Blog.Article.Entities.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\bin\Debug\netcoreapp3.1\Blog.Article.Entities.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.csprojAssemblyReference.cache
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.csproj.CoreCompileInputs.cache
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.AssemblyInfoInputs.cache
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.AssemblyInfo.cs
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Entities\obj\Debug\netcoreapp3.1\Blog.Article.Entities.pdb
