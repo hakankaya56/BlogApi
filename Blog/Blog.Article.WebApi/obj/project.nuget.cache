@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "CG4WSoj1zyRx4Fd/5HkUU18kH73shfeLw2IMPudvX4jHv0KUEZnkP1rOYV5OuCv4OwryFOA/3/fRxvmcOO+lhg==",
+  "dgSpecHash": "VxGyi3irEk4PIekqTFy8GBrbFU9tOzFmIWdUY308lHyCZGEHpC6ZkMyXt/J/bZr/Qee7J8Q4MolvnBSnHG624Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\userx\\Desktop\\DigiturkProject\\BlogApi\\Blog\\Blog.Article.WebApi\\Blog.Article.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\userx\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation\\9.2.2\\fluentvalidation.9.2.2.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.2.0\\fluentvalidation.dependencyinjectionextensions.9.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.9\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",

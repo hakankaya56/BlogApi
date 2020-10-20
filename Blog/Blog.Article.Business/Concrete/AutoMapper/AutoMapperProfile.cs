@@ -13,12 +13,9 @@ namespace Blog.Article.Business.Concrete.AutoMapper
         {
             CreateMap<Article.Entities.Concrete.Article, ArticleListForDto>()
             .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category.Name));
-
-            CreateMap<Article.Entities.Concrete.Article, ArticleDto>()
-            .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category.Name));
-
+          
             CreateMap<ArticleAddForDto, Article.Entities.Concrete.Article>();
-            CreateMap<ArticleUpdateForDto, Article.Entities.Concrete.Article>();
+        
         }
     }
 }

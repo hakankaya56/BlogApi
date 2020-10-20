@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "o75AkPHBgMozJWa6bsIhrF3a74siiUNGX+EnM1AJJXZPbSjlGidW1dxNEhdmy0b44syK6sazpZf5LGT8BZ7i5A==",
+  "dgSpecHash": "W62bIr+xwQ/Yt6HAlu7RrpRAUhetFLv6ZgSe8XfzSBppLCmhQHXn+i/q2YrZIrXhcApilf3rvAHJlW0uiGvJZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\userx\\Desktop\\DigiturkProject\\BlogApi\\Blog\\Blog.Article.Business\\Blog.Article.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\userx\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation\\9.2.2\\fluentvalidation.9.2.2.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.2.0\\fluentvalidation.dependencyinjectionextensions.9.2.0.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

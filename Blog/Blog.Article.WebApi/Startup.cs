@@ -8,6 +8,7 @@ using Blog.Article.Business.Concrete.Managers;
 using Blog.Article.DataAccess.Abstract;
 using Blog.Article.DataAccess.Concrete;
 using Blog.Article.DataAccess.Concrete.Contexts;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,11 +37,14 @@ namespace Blog.Article.WebApi
             services.AddControllers().AddNewtonsoftJson(opt=>
             {
                 opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-            });
+            }).AddFluentValidation(options => { options.RegisterValidatorsFromAssemblyContaining<Startup>(); });
 
             services.AddScoped<IArticleDal, EfArticleDal>();
             services.AddScoped<IArticleServices, ArticleManager>();
             services.AddScoped<IQueryableRepo<Article.Entities.Concrete.Article>, EfQueryableRepo<Article.Entities.Concrete.Article>>();
+
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
+            services.AddScoped<ICategoryService,CategoryManager>();
 
             services.AddScoped<ArticleContext, ArticleContext>();
         }

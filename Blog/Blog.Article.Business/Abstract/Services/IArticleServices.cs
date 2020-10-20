@@ -8,8 +8,9 @@ namespace Blog.Article.Business.Abstract.Services
 {
     public interface IArticleServices
     {
-        Task<ArticleDto> GetArticleById(int id);
+        Task<Entities.Concrete.Article> GetArticleById(int id);
         Task<List<ArticleListForDto>> GetArticleList();
+        Task<List<ArticleListForDto>> GetArticleSearchByTitle(string value);
         Task<Article.Entities.Concrete.Article> AddArticle(ArticleAddForDto articleAddForDto);
         Task<Entities.Concrete.Article> UpdateArticle(ArticleUpdateForDto articleUpdateForDto);
         void DeleteArticle(int id);

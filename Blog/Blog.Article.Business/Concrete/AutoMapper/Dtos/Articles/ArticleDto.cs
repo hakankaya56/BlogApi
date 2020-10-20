@@ -7,7 +7,9 @@ namespace Blog.Article.Business.Concrete.AutoMapper.Dtos.Articles
     public class ArticleDto
     {
         public int Id { get; set; }
+        public string Title { get; set; }
         public string Content { get; set; }
         public string Category { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 }

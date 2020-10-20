@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XPV798S/2oc8pxhBd3KCpQPemHWTAXGZGg0RIq/niZ4p/IPRHImPZOaajLz4d2984IoFHjOkzEVPHEzPU2jizw==",
+  "dgSpecHash": "fnmbUu792YBTZanH2jYItPQeDMnr+WZSXeF/SGX0Z7YwN6lhML903rNcpHFTRGMzSspC7imYmFeHJ64y/25LrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\userx\\Desktop\\DigiturkProject\\BlogApi\\Blog\\Blog.Article.Core\\Blog.Article.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation\\9.2.2\\fluentvalidation.9.2.2.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",
+    "C:\\Users\\userx\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.2.0\\fluentvalidation.dependencyinjectionextensions.9.2.0.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\userx\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.9\\microsoft.entityframeworkcore.3.1.9.nupkg.sha512",

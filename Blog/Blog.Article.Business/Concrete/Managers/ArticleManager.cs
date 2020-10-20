@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.ComponentModel;
 using System.Transactions;
+using Blog.Article.Business.ValidationRules.FluentValidation;
+using FluentValidation;
 
 namespace Blog.Article.Business.Concrete.Managers
 {
@@ -29,25 +31,17 @@ namespace Blog.Article.Business.Concrete.Managers
         }
         public async Task<Entities.Concrete.Article> AddArticle(ArticleAddForDto articleAddForDto)
         {
-            using (var scope = new TransactionScope())
+            var article = _mapper.Map<Article.Entities.Concrete.Article>(articleAddForDto);
+            var articleValidator = new ArticleValidator();
+            var resutltValidator = articleValidator.Validate(article);
+            if (resutltValidator.Errors.Count > 0)
             {
-                try
-                {
-                    var category = await _categoryService.GetCategoryByName(articleAddForDto.Category);
-
-                    var article = _mapper.Map<Article.Entities.Concrete.Article>(articleAddForDto);
-                    article.CategoryID = category.Id;
-
-                    var addedArticle = await _articleDal.AddAsync(article);
-                    scope.Complete();
-                    return addedArticle;
-                }
-                catch (Exception e)
-                {
-                    scope.Dispose();
-                    throw new Exception(e.InnerException != null ? e.InnerException.Message : e.Message);
-                }
+                throw new ValidationException(resutltValidator.Errors);
             }
+            var addedArticle = await _articleDal.AddAsync(article);
+
+            return addedArticle;
+
         }
 
         public void DeleteArticle(int id)
@@ -56,15 +50,15 @@ namespace Blog.Article.Business.Concrete.Managers
             _articleDal.Delete(new Entities.Concrete.Article { Id = article.Result.Id });
         }
 
-        public async Task<ArticleDto> GetArticleById(int id)
+        public async Task<Article.Entities.Concrete.Article> GetArticleById(int id)
         {
             var article = await _queryableRepoArticle.GetAll.Include(a => a.Category).FirstOrDefaultAsync(a => a.Id == id);
             if (article == null)
             {
                 throw new Exception("Article did not find");
             }
-            var articleDto = _mapper.Map<ArticleDto>(article);
-            return articleDto;
+            
+            return article;
         }
 
         public async Task<List<ArticleListForDto>> GetArticleList()
@@ -74,28 +68,33 @@ namespace Blog.Article.Business.Concrete.Managers
             return articleListDto;
         }
 
+        public async Task<List<ArticleListForDto>> GetArticleSearchByTitle(string value)
+        {
+            var articleList = await _queryableRepoArticle.GetAll.Where(a => a.Title.Contains(value)).Include(a => a.Category).ToListAsync();
+            var articleListDto = _mapper.Map<List<ArticleListForDto>>(articleList);
+            return articleListDto;
+        }
+
         public async Task<Entities.Concrete.Article> UpdateArticle(ArticleUpdateForDto articleUpdateForDto)
         {
-            using (var scope = new TransactionScope())
+            var article = await GetArticleById(articleUpdateForDto.Id);
+
+            article.Title = articleUpdateForDto.Title;
+            article.Content = articleUpdateForDto.Content;
+            article.CategoryID = articleUpdateForDto.CategoryID;
+            article.UpdatedDate = articleUpdateForDto.UpdatedDate;
+
+
+            var articleValidator = new ArticleValidator();
+            var resutltValidator = articleValidator.Validate(article);
+            if (resutltValidator.Errors.Count > 0)
             {
-                try
-                {  
-                    var articleDto = await GetArticleById(articleUpdateForDto.Id);
-
-                    var category = await _categoryService.GetCategoryByName(articleUpdateForDto.Category);
-                    var article = _mapper.Map<Article.Entities.Concrete.Article>(articleUpdateForDto);
-                    article.CategoryID = category.Id;
-
-                    var updatedArticle =  _articleDal.Update(article);
-                    scope.Complete();
-                    return updatedArticle;
-                }
-                catch (Exception e)
-                {
-                    scope.Dispose();
-                    throw new Exception(e.InnerException != null ? e.InnerException.Message : e.Message);
-                }
+                throw new ValidationException(resutltValidator.Errors);
             }
+            var updatedArticle = _articleDal.Update(article);
+
+            return updatedArticle;
+
         }
     }
 }

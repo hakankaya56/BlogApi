@@ -143,3 +143,7 @@ C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\bin\Debu
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\obj\Debug\netcoreapp3.1\Blog.Article.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\obj\Debug\netcoreapp3.1\Blog.Article.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\obj\Debug\netcoreapp3.1\Blog.Article.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.WebApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

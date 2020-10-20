@@ -49,7 +49,7 @@ namespace Blog.Article.Core.DataAccess.EfEntityFramework
         {
             using (var context = new TContext())
             {
-                return context.Set<TEntity>().SingleOrDefault();
+                return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
 
@@ -57,8 +57,9 @@ namespace Blog.Article.Core.DataAccess.EfEntityFramework
         {
             using (var context = new TContext())
             {
-                return await context.Set<TEntity>().SingleOrDefaultAsync();
+                return await context.Set<TEntity>().SingleOrDefaultAsync(filter);
             }
+
         }
 
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
