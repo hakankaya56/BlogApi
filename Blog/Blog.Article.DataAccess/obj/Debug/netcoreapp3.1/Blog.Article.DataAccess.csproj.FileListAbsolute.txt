@@ -7,3 +7,8 @@ C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\obj\
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\obj\Debug\netcoreapp3.1\Blog.Article.DataAccess.AssemblyInfo.cs
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\obj\Debug\netcoreapp3.1\Blog.Article.DataAccess.dll
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\obj\Debug\netcoreapp3.1\Blog.Article.DataAccess.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\bin\Debug\netcoreapp3.1\Blog.Article.Core.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\bin\Debug\netcoreapp3.1\Blog.Article.Entities.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\bin\Debug\netcoreapp3.1\Blog.Article.Core.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\bin\Debug\netcoreapp3.1\Blog.Article.Entities.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.DataAccess\obj\Debug\netcoreapp3.1\Blog.Article.DataAccess.csproj.CopyComplete

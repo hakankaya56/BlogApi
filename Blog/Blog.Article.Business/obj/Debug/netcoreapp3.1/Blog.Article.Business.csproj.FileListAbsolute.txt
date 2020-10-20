@@ -2,8 +2,15 @@ C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\De
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Business.dll
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Business.pdb
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.csprojAssemblyReference.cache
-C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.csproj.CoreCompileInputs.cache
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.AssemblyInfoInputs.cache
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.AssemblyInfo.cs
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.dll
 C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Core.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.DataAccess.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Entities.dll
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.DataAccess.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Entities.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\bin\Debug\netcoreapp3.1\Blog.Article.Core.pdb
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.csproj.CopyComplete
+C:\Users\userx\Desktop\DigiturkProject\BlogApi\Blog\Blog.Article.Business\obj\Debug\netcoreapp3.1\Blog.Article.Business.csproj.CoreCompileInputs.cache
