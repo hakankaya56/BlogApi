@@ -2,6 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Blog.Article.Business.Abstract.Services;
+using Blog.Article.Business.Concrete.Managers;
+using Blog.Article.DataAccess.Abstract;
+using Blog.Article.DataAccess.Concrete;
+using Blog.Article.DataAccess.Concrete.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace Blog.Article.WebApi
 {
@@ -25,8 +32,20 @@ namespace Blog.Article.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddAutoMapper();
+            services.AddControllers().AddNewtonsoftJson(opt=>
+            {
+                opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            });
+
+            services.AddScoped<IArticleDal, EfArticleDal>();
+            services.AddScoped<IArticleServices, ArticleManager>();
+            services.AddScoped<IQueryableRepo<Article.Entities.Concrete.Article>, EfQueryableRepo<Article.Entities.Concrete.Article>>();
+
+            services.AddScoped<ArticleContext, ArticleContext>();
         }
+
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
