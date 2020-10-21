@@ -1,6 +1,6 @@
 Projede katmanlı mimari yapısı kullanıldı, 5 tane katman bulunmaktadır.Katmanlar  Core, Entites, DataAccess, Business ve WebApi,
 Core katmanı Repository bulundurduğum katman, EntityFramework ORM aracını kullandığım için EfEntityRepositoryBase olarak isimlendirdim.
-Entites katmanı  veritabanında tablolarıma karşılık classları oluşturduğum tablo bu katmanda ayrıca complex type classları oluşturabiliriz. 
+Entites katmanı  veritabanında tablolarıma karşılık gelen classları oluşturduğum katman ayrıca Entites katmanında  complex type classları oluşturabiliriz. 
 DataAccess katmanı veritabanı contextin  bulunduğu katman, ayrıca  Repository generic yapı bir yapıda olduğu için, aynı proje içinde birden fazla context ile  çalışmama yardımcı oluyor. 
 Business katmanı servislerimi barındığım ayrıca  validatons kontrollerin yapıldığı katman,
 
